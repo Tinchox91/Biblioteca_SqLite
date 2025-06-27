@@ -10,7 +10,7 @@ class Inicio
         Colors.Magenta("Bienvenido!", true);
         var context = new AppDbContext();
       LibroController li = new LibroController(context);
-       
+        li.GetLibrosDisponiblesAsync();
         Console.ReadKey();
 
        

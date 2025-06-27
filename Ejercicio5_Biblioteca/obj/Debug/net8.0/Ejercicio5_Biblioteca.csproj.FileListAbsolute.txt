@@ -140,3 +140,4 @@ D:\Martin\INSTIUTTO IDRA\2do\Programacion\Guia 1\Ejercicio5_Biblioteca\Ejercicio
 D:\Martin\INSTIUTTO IDRA\2do\Programacion\Guia 1\Ejercicio5_Biblioteca\Ejercicio5_Biblioteca\obj\Debug\net8.0\Ejercicio5_Biblioteca.pdb
 D:\Martin\INSTIUTTO IDRA\2do\Programacion\Guia 1\Ejercicio5_Biblioteca\Ejercicio5_Biblioteca\obj\Debug\net8.0\Ejercicio5_Biblioteca.genruntimeconfig.cache
 D:\Martin\INSTIUTTO IDRA\2do\Programacion\Guia 1\Ejercicio5_Biblioteca\Ejercicio5_Biblioteca\obj\Debug\net8.0\ref\Ejercicio5_Biblioteca.dll
+D:\Martin\INSTIUTTO IDRA\2do\Programacion\Guia 1\Ejercicio5_Biblioteca\Ejercicio5_Biblioteca\obj\Debug\net8.0\Ejercicio5_Biblioteca.sourcelink.json
