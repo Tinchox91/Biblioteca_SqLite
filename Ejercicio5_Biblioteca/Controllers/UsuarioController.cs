@@ -1,5 +1,6 @@
 ﻿using BasicPack;
 using Contexto;
+using Microsoft.EntityFrameworkCore;
 using Modelos;
 using Views;
 
@@ -14,13 +15,15 @@ namespace Controllers
         {
             _context = context;
         }
-        public List<Usuario> TraerTodos() => _context.Usuarios.ToList();
-        public void AddUsuario()
+        public async Task<List<Usuario>> TraerTodos() =>  await _context.Usuarios.ToListAsync();
+        public async Task AddUsuario()
         {
             try
             {
                 _context.Usuarios.Add(UsuarioView.CrearUsuario());
-                _context.SaveChanges();
+                Colors.White("Guardando Usuario...");
+                await _context.SaveChangesAsync();
+                Colors.White("\r");
                 Colors.Green("Usuario Creado Exitosamente!");
             }
             catch (Exception e)
@@ -29,23 +32,34 @@ namespace Controllers
             }
            
         }
-        public void GetUsuarios() => UsuarioView.MostrarUsuarios(TraerTodos());
-
-
-
-        public void GetUsuarioById()
+        public async Task GetUsuarios()
         {
-            UsuarioView.BuscarUsuario(TraerTodos());
+            Colors.White("Cargando Usuarios...");
+            var usuarios = await TraerTodos();
+           
+            Colors.White("\r");
+            if (usuarios.Count == 0)
+            {
+                Colors.Red("No hay usuarios registrados.",true);
+                return;
+            }
+            UsuarioView.MostrarUsuarios(usuarios);
         }
-        public void UpdateUsuario()
+        public async Task GetUsuarioById()
         {
-            Usuario us = UsuarioView.ActualizarUsuario(TraerTodos());
+            UsuarioView.BuscarUsuario(await TraerTodos());
+        }
+        public async Task UpdateUsuario()
+        {
+            Usuario us = UsuarioView.ActualizarUsuario(await TraerTodos());
             var existingUsuario = _context.Usuarios.FirstOrDefault(u => u.Id == us.Id);
             if (existingUsuario != null)
             {
                 existingUsuario.Name = us.Name;
                 existingUsuario.Mail = us.Mail;
-                _context.SaveChanges();
+                Colors.White("Actualizando Usuario...");
+                await  _context.SaveChangesAsync();
+                Colors.White("\r");
                 Colors.Green("Usuario actualizado correctamente.");
             }
             else
@@ -53,25 +67,43 @@ namespace Controllers
                 Colors.Red("Usuario no encontrado.");
             }
         }
-        public void DeleteUsuario()
+        public async Task DeleteUsuario()
         {
-            int id = UsuarioView.EliminarUsuario(TraerTodos());
+            int id = UsuarioView.EliminarUsuario(await TraerTodos());
             var usuario = _context.Usuarios.FirstOrDefault(u => u.Id == id);
             if (usuario != null)
             {
                 _context.Usuarios.Remove(usuario);
-                _context.SaveChanges();
+                Colors.White("Eliminando Usuario...");
+                await _context.SaveChangesAsync();
+                Colors.White("\r");
                 Colors.Green("Usuario eliminado correctamente.");
             }
             else {                 Colors.Red("Usuario no encontrado."); }
         }
-        public void SearchUsuarios()
+        public async Task SearchUsuarios()
         {
             string search=UsuarioView.BuscarUsuario();
             //aca se aplica codigo linq pra buscar usuarios por nombre o mail
-          UsuarioView.MostrarUsuarios( _context.Usuarios
+            var usuarios = await _context.Usuarios
                 .Where(u => u.Name.Contains(search) || u.Mail.Contains(search))
-                .ToList());
+                .ToListAsync();
+            Colors.White("Buscando Usuario...");
+            Colors.White("\r");
+            if (usuarios.Count == 0)
+            {
+                Colors.Red("No se encontraron usuarios con ese criterio de búsqueda.",true);
+                return;
+            }else
+            {
+                Colors.Green("Usuarios encontrados:");
+                Colors.DarkGray(new string('-', 100), true);
+                UsuarioView.MostrarUsuarios(usuarios);
+            }
+           
+
+           
+
         }
       
 

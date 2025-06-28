@@ -4,14 +4,27 @@ namespace Views
 {
    public static class LibroView
     {
+        private static string x = new string('-', 30);
         public static string MenuLibro()
         {
-            Colors.Magenta("1. Crear Libro", true);
-            Colors.Magenta("2. Eliminar Libro", true);
-            Colors.Magenta("3. Actualizar Libro", true);
-            Colors.Magenta("4. Buscar Libro por Autor", true);
-            Colors.Magenta("5. Mostrar Libros", true);
-            Colors.Magenta("6. Salir", true);
+            Colors.DarkGray(x, true);
+            Colors.Blue("*** Menú de Libros ***", true);
+            Colors.Magenta("1. ");
+            Colors.White("Agregar Libro", true);
+            Colors.Magenta("2. ");
+            Colors.White("Eliminar Libro", true);
+            Colors.Magenta("3. ");
+            Colors.White("Actualizar Libro", true);
+            Colors.Magenta("4. ");
+            Colors.White("Buscar Libro por Autor", true);
+            Colors.Magenta("5. ");
+            Colors.White("Buscar Libro por ISBN", true);
+            Colors.Magenta("6. ");
+            Colors.White("Mostrar Todos los Libros", true);
+            Colors.Magenta("7. ");
+            Colors.White("Salir", true);
+            Colors.DarkGray(x, true);
+
             Colors.Cyan("Seleccione una opción: ");
             return Console.ReadLine();
         }

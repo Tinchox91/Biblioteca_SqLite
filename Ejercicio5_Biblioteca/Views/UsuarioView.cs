@@ -5,17 +5,28 @@ namespace Views
 {
    public static class UsuarioView
     {
-    public static string MenuUsuario()
+       private static string x = new string('-', 30);
+        public static string MenuUsuario()
         {
-            Colors.Blue("*** Menú de Usuarios ***", true);
-            Colors.DarkGray(new string('-', 100), true);
-            Colors.Blue("1. Crear Usuario");
-            Colors.Blue("2. Eliminar Usuario");
-            Colors.Blue("3. Actualizar Usuario");
-            Colors.Blue("4. Buscar Usuario por ID");
-            Colors.Blue("5. Mostrar Todos los Usuarios");
-            Colors.Blue("6. Salir");
-            Colors.White("Seleccione una opción: ");
+            Colors.DarkGray(x, true);
+            Colors.Magenta("*** Menú de Usuarios ***", true);
+            Colors.Magenta("1. ");
+            Colors.White("Crear Usuario", true);
+            Colors.Magenta("2. ");
+            Colors.White("Mostrar Usuario", true);
+            Colors.Magenta("3. ");
+            Colors.White("Mostrar Usuarios", true);
+            Colors.Magenta("4. ");
+            Colors.White("Actualizar Usuario", true);
+            Colors.Magenta("5. ");
+            Colors.White("Eliminar Usuario", true);
+            Colors.Magenta("6. ");
+            Colors.White("Buscar Usuario", true);
+            Colors.Magenta("7. ");
+            Colors.White("Salir", true);
+            Colors.DarkGray(x, true);
+
+            Colors.Cyan("Seleccione una opción: ");
             return Console.ReadLine();
         }
         public static void MostrarUsuario(Usuario usuario)

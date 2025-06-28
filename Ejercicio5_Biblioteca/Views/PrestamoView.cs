@@ -5,28 +5,40 @@ namespace Views
 {
     public static class PrestamoView
     {
+        private static string x = new string('-', 30);
         public static string  MenuPrestamo()
-        { 
-            Colors.Blue("*** Menú de Préstamos ***", true);
-            Colors.DarkGray(new string('-', 100), true);   
-            
-                Colors.Blue("1. Crear Préstamo");
-                Colors.Blue("2. Eliminar Préstamo");
-                Colors.Blue("3. Actualizar Préstamo");
-                Colors.Blue("4. Buscar Préstamo por ID");
-                Colors.Blue("5. Buscar Préstamo por Usuario");
-                Colors.Blue("6. Mostrar Todos los Préstamos");
-                Colors.Blue("7. Salir");
-                Colors.White("Seleccione una opción: ");
-                return Console.ReadLine();
+        {
+            Colors.DarkGray(x, true);
+            Colors.Magenta("*** Menú de Prestamos ***", true);
+            Colors.Magenta("1. ");
+            Colors.White("Crear Prestamo", true);
+            Colors.Magenta("2. ");            
+            Colors.White("Mostrar Prestamos", true);
+            Colors.Magenta("3. ");
+            Colors.White("Actualizar Prestamo", true);
+            Colors.Magenta("4. ");
+            Colors.White("Eliminar Prestamo", true);
+            Colors.Magenta("5. ");
+            Colors.White("Buscar Prestamo por Id", true);
+            Colors.Magenta("6. ");
+            Colors.White("Buscar Prestamo por Usuario ", true);
+            Colors.Magenta("7. ");
+            Colors.White("Salir", true);
+            Colors.DarkGray(x, true);
+
+            Colors.Cyan("Seleccione una opción: ");
+            return Console.ReadLine();
 
         }
-        public static void MostrarPrestamo(Prestamo pres){ 
+        public static void MostrarPrestamo(Prestamo pres)
+        {
             string barra = new string('-', 100);
-            Colors.Magenta($"Id: {pres.Id} -- Usuario: {pres.Usuario.Name} -- Libro: {pres.Libro.Titulo} -- Fecha de Préstamo: {pres.FechaPrestamo} ", true);
+            string usuario = pres.Usuario != null ? pres.Usuario.Name : "N/A";
+            string libro = pres.Libro != null ? pres.Libro.Titulo : "N/A";
+            Colors.Magenta($"Id: {pres.Id} -- Usuario: {usuario} -- Libro: {libro} -- Fecha de Préstamo: {pres.FechaPrestamo} ", true);
             Colors.DarkGray(barra, true);
-
         }
+
         public static void MostrarPrestamos(List<Prestamo> prestamos)
         {
             if (prestamos == null || prestamos.Count == 0)
@@ -90,6 +102,26 @@ namespace Views
             {
                 MostrarPrestamo(pres);
             }
+        }
+        public static Prestamo? BuscarPrestamo(List<Prestamo> prestamos)
+        {
+            int id;
+            Colors.Magenta("Ingrese el ID del préstamo a buscar: ");
+            id = Valid.IsNumber();
+            Prestamo pres = prestamos.FirstOrDefault(p => p.Id == id);
+            if (pres == null)
+            {
+                Colors.Red("El préstamo no existe.", true);                
+            }
+
+            return pres ; 
+        }
+        public static string BuscarPrestamoUsuario()
+        {
+            string name;
+            Colors.Magenta("Ingrese el nombre del usuario a buscar: ");
+            name = Valid.IsString();
+            return name;
         }
         public static void BuscarPrestamoUsuario(List<Prestamo> prestamos)
         {
