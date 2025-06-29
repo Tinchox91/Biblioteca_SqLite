@@ -107,10 +107,57 @@ namespace Views
                 Colors.Red("El libro no existe.", true);
                 return null; // Indica que no se encontró el libro
             }
-            Colors.Cyan("Ingrese el nuevo Titulo: ");
-            string titulo = Valid.IsString();
-            Colors.Cyan("Ingrese el nuevo Autor: ");
-            string autor = Valid.IsString();
+            Colors.Magenta("*** Actualizar Libro ***", true);
+            Colors.DarkGray(new string('-', 30), true);
+            Colors.DarkGray($"Titulo original: ");
+            Colors.White($"{libro.Titulo}", true);
+            Colors.DarkGray($"Autor original: ");
+            Colors.White($"{libro.Autor}", true);
+            bool isValid;
+            // Validación para actualizar el título
+            do
+            {
+                isValid = false;
+                string op = opcion("Actualizar el Titulo");
+               
+                switch (op)
+                {
+                    case "1":
+                        Colors.Cyan("Manteniendo el Titulo original.");
+                        break;
+                    case "2":
+                        Colors.Cyan("Ingrese el nuevo Titulo: ");
+                        libro.Titulo = Valid.IsString();
+                        break;
+                    default:
+                        Colors.Red("Opción no válida, manteniendo el Titulo original.", true);
+                        isValid = true;
+                        break;
+                }
+            } while (isValid);
+            // Validación para actualizar el autor
+            do
+            {
+                isValid = false;
+                string op = opcion("Actualizar el Autor");
+
+                switch (op)
+                {
+                    case "1":
+                        Colors.Cyan("Manteniendo el Autor original.");
+                        break;
+                    case "2":
+                        Colors.Cyan("Ingrese el nuevo Autor: ");
+                        libro.Autor = Valid.IsString();
+                        break;
+                    default:
+                        Colors.Red("Opción no válida, manteniendo el Titulo original.", true);
+                        isValid = true;
+                        break;
+                }
+            } while (isValid);
+
+           
             Colors.Cyan("Ingrese la nueva Disponibilidad (Disponible/No Disponible): ");
             string disponibilidad = Valid.IsString();
             if (disponibilidad != "Disponible" && disponibilidad != "No Disponible")
@@ -119,8 +166,8 @@ namespace Views
                 return null; // Indica que la disponibilidad es inválida
             }
             libro.Disponibilidad = disponibilidad;
-            libro.Titulo = titulo;
-            libro.Autor = autor;
+           
+           
             return libro; // Retorna el libro actualizado
         }
         public static string BuscarLibroAutor(List<Libro> libros)
@@ -148,6 +195,38 @@ namespace Views
                 return;
             }
             MostrarLibro(libro);
+        }
+        public static List<Libro> DevolverLibrosDisponibles(List<Libro> libros)
+        {
+            var librosDisponibles = libros.Where(l => l.Disponibilidad.Equals("Disponible", StringComparison.OrdinalIgnoreCase)).ToList();
+            if (librosDisponibles.Count == 0)
+            {
+                Colors.Red("No hay libros disponibles.", true);
+                return null; // Indica que no hay libros disponibles
+            }
+         
+            return librosDisponibles; // Retorna la lista de libros disponibles
+        }
+        public static Libro DevolverLibroIsbn(List<Libro> libros)
+        {
+            Colors.Cyan("Ingrese el ISBN del libro a buscar: ");
+            int isbn = Valid.IsNumber();
+            Libro libro = libros.FirstOrDefault(l => l.Isbn == isbn);
+            if (libro == null)
+            {
+                Colors.Red("El libro no existe.", true);
+               return null; // Indica que no se encontró el libro
+            }
+           return libro;
+        }
+        public static string opcion(string titulo)
+        {
+            Colors.Cyan($"¿Desea {titulo} ?: ",true);
+            Colors.Magenta($"1. Para dejar el registro original ",true);
+            Colors.White("2. Para cambiar el registro ", true);
+           string dv= Valid.IsNumberString();
+            return dv;  
+
         }
     }
 }

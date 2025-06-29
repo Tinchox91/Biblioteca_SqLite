@@ -12,13 +12,33 @@ namespace Controllers
         public PrestamoController(AppDbContext context)
         {
             _context = context;
+          //  TraerTodos().Wait(); // Cargar los préstamos al iniciar el controlador
         }
-        public async Task<List<Prestamo>> TraerTodos() => await _context.Prestamos.ToListAsync();
+     //   public async Task<List<Prestamo>> TraerTodos() => await _context.Prestamos.ToListAsync();
+       
+        public async Task<List<Prestamo>> TraerTodos()
+        {
+            return await _context.Prestamos
+                .Include(p => p.Libro)
+                .Include(p => p.Usuario)
+                .ToListAsync();
+        }
+
         public async Task AddPrestamo()
         {
             try
             {
-               _context.Prestamos.Add(PrestamoView.CrearPrestamo());
+                List<Libro> libros = await _context.Libros.ToListAsync();
+                List<Usuario> usuarios = await _context.Usuarios.ToListAsync();
+                Prestamo pres = PrestamoView.CrearPrestamo(usuarios,libros);
+               Usuario usuario  = _context.Usuarios.FirstOrDefault(u => u.Id == pres.Usuario.Id);
+                if (usuario==null)
+                {
+                   _context.Usuarios.Add(pres.Usuario);
+                }
+                pres.Libro = _context.Libros.FirstOrDefault(l => l.Isbn == pres.Libro.Isbn);
+                
+                _context.Prestamos.Add(pres);
                 Colors.White("Guardando Prestamo...");
                 await   _context.SaveChangesAsync();
                 Colors.White("\r");
@@ -31,8 +51,8 @@ namespace Controllers
         }
         public async Task GetPrestamos()
         {
-          var prestamos = await TraerTodos();
-            Colors.White("Cargando prestamos...");
+            Colors.White("Cargando prestamos...");           
+            var prestamos = await TraerTodos();          
             Colors.White("\r");
             PrestamoView.MostrarPrestamos(prestamos);
         }

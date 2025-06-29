@@ -64,7 +64,7 @@ class Inicio
                                 Console.ReadKey();
                                 break;
                             case "2":
-                                li.GetLibrosAsync().GetAwaiter().GetResult();
+                               li.DeleteLibroAsync().GetAwaiter().GetResult();
                                 Colors.DarkGray("Apriete cualquier tecla para continuar...", true);
                                 Console.ReadKey();
                                 break;
@@ -74,23 +74,28 @@ class Inicio
                                 Console.ReadKey();
                                 break;
                             case "4":
-                                li.GetLibroByIsbnAsync().GetAwaiter().GetResult();
+                              li.SearchLibrosAutorAsync().GetAwaiter().GetResult();
                                 Colors.DarkGray("Apriete cualquier tecla para continuar...", true);
                                 Console.ReadKey();
                                 break;
                             case "5":
-                                li.GetLibrosAsync().GetAwaiter().GetResult();
+                              li.GetLibroByIsbnAsync().GetAwaiter().GetResult();
                                 Colors.DarkGray("Apriete cualquier tecla para continuar...", true);
                                 Console.ReadKey();
                                 break;
                             case "6":
-                                Colors.White("Saliendo del menú de Libros...");
+                                li.GetLibrosAsync().GetAwaiter().GetResult();
+                                Colors.DarkGray("Apriete cualquier tecla para continuar...", true);
+                                Console.ReadKey();
+                                break;
+                                case "7":
+                                    Colors.White("Saliendo del menú de Libros...");
                                 break;
                             default:
                                 Colors.Red("Opción no válida. Intente nuevamente.");
                                 break;
                         }
-                    } while (opcionLibro != "6");
+                    } while (opcionLibro != "7");
                     break;
                 //Usuarios
                 case "2":
@@ -149,9 +154,11 @@ class Inicio
                 case "3":
                         string opcionPrestamo;
                     Console.Clear();
-                    opcionPrestamo = PrestamoView.MenuPrestamo();
+                   
                     do
                     {
+                        Console.Clear();
+                        opcionPrestamo = PrestamoView.MenuPrestamo();
                         switch (opcionPrestamo)
                         {
                             case "1":

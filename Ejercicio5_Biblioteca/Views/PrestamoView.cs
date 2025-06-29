@@ -34,8 +34,15 @@ namespace Views
         {
             string barra = new string('-', 100);
             string usuario = pres.Usuario != null ? pres.Usuario.Name : "N/A";
-            string libro = pres.Libro != null ? pres.Libro.Titulo : "N/A";
-            Colors.Magenta($"Id: {pres.Id} -- Usuario: {usuario} -- Libro: {libro} -- Fecha de Préstamo: {pres.FechaPrestamo} ", true);
+            string libro = pres.Libro != null ? pres.Libro.Titulo : "N/A";          
+            Colors.Magenta("Id: ");
+            Colors.White($"{pres.Id}", true);
+            Colors.Magenta(" -- Usuario: ");
+            Colors.White($"{usuario}", true);
+            Colors.Magenta(" -- Libro: ");
+            Colors.White($"{libro}", true);
+            Colors.Magenta(" -- Fecha de Préstamo: ");
+            Colors.White($"{pres.FechaPrestamo}", true);
             Colors.DarkGray(barra, true);
         }
 
@@ -59,6 +66,62 @@ namespace Views
             pres.FechaPrestamo = DateTime.Now.ToString("dd/MM/yyyy");
             return pres;
 
+        }
+        public static Prestamo CrearPrestamo(List<Usuario> usuarios, List<Libro> libros)
+        {
+            Prestamo pres = new Prestamo();
+            //Se selecciona el usuario del préstamo
+            string op ="1";
+            bool salir = false; 
+            if (usuarios!=null && libros != null)
+            {
+                do
+                {
+                    Colors.Magenta("Ingresa la opcion deseada:", true);
+                    Colors.Magenta("1. ");
+                    Colors.White("Seleccionar Usuario Existente", true);
+                    Colors.Magenta("2. ");
+                    Colors.White("Crear Nuevo Usuario", true);
+                    op = Console.ReadLine();
+                    switch (op)
+                    {
+                        case "1":
+                            Colors.Magenta("Selecciona un usuario por ID: ", true);
+                            int idUsuario = Valid.IsNumber();
+                            Usuario usuario = usuarios.FirstOrDefault(u => u.Id == idUsuario);
+                            if (usuario != null)
+                            {
+                                pres.Usuario = usuario;
+                                salir = true;
+                            }
+                            else
+                            {
+                                Colors.Red("Usuario no encontrado. Por favor, intenta de nuevo.", true);
+                                op = "1"; 
+                                salir = false;
+                            }
+                            break;
+                            case "2":
+                                pres.Usuario = UsuarioView.CrearUsuario();
+                                break;
+                        default: salir = false; break;
+                           
+                    }
+                } while (!salir);
+                pres.FechaPrestamo = DateTime.Now.ToString("dd/MM/yyyy");
+            }
+            //se selecciona el libro del préstamo
+            Colors.Magenta("Selecciona el libro a prestar : ",true);
+            if (libros == null || libros.Count == 0)
+            {
+                Colors.Red("No hay libros disponibles para prestar.", true);
+                return null; // No se puede crear el préstamo si no hay libros
+            }
+            libros = LibroView.DevolverLibrosDisponibles(libros);
+            pres.Libro=LibroView.DevolverLibroIsbn(libros);
+            pres.Libro.Disponibilidad = "No Disponible"; // Cambia la disponibilidad del libro a no disponible
+
+            return pres;
         }
         public static int EliminarPrestamo(List<Prestamo> prestamos)
         {

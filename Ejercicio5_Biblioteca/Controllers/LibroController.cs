@@ -55,11 +55,13 @@ public class LibroController
     {
         var libros = await TraerTodosAsync();
         Libro libro = LibroView.ActualizarLibro(libros);
-        var existingLibro = await _context.Libros.FirstOrDefaultAsync(l => l.Isbn == libro.Isbn);
+      
         try
         {
+            var existingLibro = await _context.Libros.FirstOrDefaultAsync(l => l.Isbn == libro.Isbn);
             if (existingLibro != null)
             {
+              
                 existingLibro.Titulo = libro.Titulo;
                 existingLibro.Autor = libro.Autor;
                 existingLibro.Disponibilidad = libro.Disponibilidad;
@@ -71,11 +73,15 @@ public class LibroController
             else
             {
                 Colors.Red("El libro no existe.");
+                Colors.DarkGray("Intente de nuevo Con otro distinto...", true);
+
+
             }
         }
         catch (Exception e)
         {
-            Colors.Red($"Error: {e.Message}");
+          
+         //  Colors.Red($"Error: {e.Message}",true);
         }
     }
 

@@ -77,12 +77,55 @@ namespace Views
                 Colors.Red("El usuario no existe.", true);
                 return null; // Indica que no se encontró el usuario
             }
-            Colors.Magenta("Nuevo nombre del usuario: ");
-            string name = Valid.IsString();
-            Colors.Magenta("Nuevo email del usuario: ");
-            string mail = Valid.IsMail();
-            usuario.Name = name;
-            usuario.Mail = mail;
+            Colors.Magenta("*** Actualizar Usuario ***", true);
+            Colors.DarkGray(new string('-', 30), true);
+            Colors.DarkGray($"Nombre original: ");
+            Colors.White($"{usuario.Name}", true);
+            Colors.DarkGray($"Mail original: ");
+            Colors.White($"{usuario.Mail}", true);
+            bool isValid;
+            // Validación para actualizar el Nombre
+            do
+            {
+                isValid = false;
+                string op = opcion("Actualizar el Nombre");
+
+                switch (op)
+                {
+                    case "1":
+                        Colors.Cyan("Manteniendo el Nombre original.");
+                        break;
+                    case "2":
+                        Colors.Cyan("Ingrese el nuevo Nombre: ");
+                       usuario.Name = Valid.IsString();
+                        break;
+                    default:
+                        Colors.Red("Opción no válida, manteniendo el Titulo original.", true);
+                        isValid = true;
+                        break;
+                }
+            } while (isValid);
+            // Validación para actualizar el Mail
+            do
+            {
+                isValid = false;
+                string op = opcion("Actualizar el Mail");
+
+                switch (op)
+                {
+                    case "1":
+                        Colors.Cyan("Manteniendo el Mail original.");
+                        break;
+                    case "2":
+                        Colors.Cyan("Ingrese el nuevo Mail: ");
+                       usuario.Mail = Valid.IsMail();
+                        break;
+                    default:
+                        Colors.Red("Opción no válida, Ingrese de nuevo", true);
+                        isValid = true;
+                        break;
+                }
+            } while (isValid);
             return usuario; // Retorna el usuario actualizado
         }
         public static int BuscarUsuario(List<Usuario> usuarios)
@@ -104,6 +147,15 @@ namespace Views
             Colors.Magenta("Ingrese el nombre o email del usuario a buscar: ");
             string search = Valid.IsString();
             return search; // Retorna el nombre o email del usuario a buscar
+        }
+        public static string opcion(string titulo)
+        {
+            Colors.Cyan($"¿Desea {titulo} ?: ",true);
+            Colors.Magenta($"1. Para dejar el registro original ", true);
+            Colors.White("2. Para cambiar el registro ", true);
+            string dv = Valid.IsNumberString();
+            return dv;
+
         }
     }
 }
