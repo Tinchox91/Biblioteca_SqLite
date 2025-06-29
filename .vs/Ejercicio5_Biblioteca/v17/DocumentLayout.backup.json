@@ -30,24 +30,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Bookmark",
               "Name": "ST:1:0:{e8034f19-ab72-4f06-83fd-f6832b41aa63}"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "PrestamoView.cs",
-              "DocumentMoniker": "D:\\Martin\\INSTIUTTO IDRA\\2do\\Programacion\\Guia 1\\Ejercicio5_Biblioteca\\Ejercicio5_Biblioteca\\Views\\PrestamoView.cs",
-              "RelativeDocumentMoniker": "Ejercicio5_Biblioteca\\Views\\PrestamoView.cs",
-              "ToolTip": "D:\\Martin\\INSTIUTTO IDRA\\2do\\Programacion\\Guia 1\\Ejercicio5_Biblioteca\\Ejercicio5_Biblioteca\\Views\\PrestamoView.cs*",
-              "RelativeToolTip": "Ejercicio5_Biblioteca\\Views\\PrestamoView.cs*",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACQAAABKAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-29T20:18:23.886Z",
-              "EditorCaption": ""
             },
             {
               "$type": "Bookmark",
@@ -56,6 +43,19 @@
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "PrestamoView.cs",
+              "DocumentMoniker": "D:\\Martin\\INSTIUTTO IDRA\\2do\\Programacion\\Guia 1\\Ejercicio5_Biblioteca\\Ejercicio5_Biblioteca\\Views\\PrestamoView.cs",
+              "RelativeDocumentMoniker": "Ejercicio5_Biblioteca\\Views\\PrestamoView.cs",
+              "ToolTip": "D:\\Martin\\INSTIUTTO IDRA\\2do\\Programacion\\Guia 1\\Ejercicio5_Biblioteca\\Ejercicio5_Biblioteca\\Views\\PrestamoView.cs",
+              "RelativeToolTip": "Ejercicio5_Biblioteca\\Views\\PrestamoView.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACQAAABKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-29T20:18:23.886Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
