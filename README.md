@@ -1,5 +1,4 @@
 # Biblioteca_SqLite
-# Biblioteca DB
 
 ## Descripción
 
