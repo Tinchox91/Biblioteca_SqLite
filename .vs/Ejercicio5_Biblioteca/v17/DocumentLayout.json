@@ -3,12 +3,12 @@
   "WorkspaceRootPath": "D:\\Martin\\INSTIUTTO IDRA\\2do\\Programacion\\Guia 1\\Ejercicio5_Biblioteca\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{C46AD4BF-F35A-4E57-947E-36A9F1F19BB8}|Ejercicio5_Biblioteca\\Ejercicio5_Biblioteca.csproj|d:\\martin\\instiutto idra\\2do\\programacion\\guia 1\\ejercicio5_biblioteca\\ejercicio5_biblioteca\\views\\prestamoview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C46AD4BF-F35A-4E57-947E-36A9F1F19BB8}|Ejercicio5_Biblioteca\\Ejercicio5_Biblioteca.csproj|solutionrelative:ejercicio5_biblioteca\\views\\prestamoview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{C46AD4BF-F35A-4E57-947E-36A9F1F19BB8}|Ejercicio5_Biblioteca\\Ejercicio5_Biblioteca.csproj|d:\\martin\\instiutto idra\\2do\\programacion\\guia 1\\ejercicio5_biblioteca\\ejercicio5_biblioteca\\inicio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{C46AD4BF-F35A-4E57-947E-36A9F1F19BB8}|Ejercicio5_Biblioteca\\Ejercicio5_Biblioteca.csproj|solutionrelative:ejercicio5_biblioteca\\inicio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C46AD4BF-F35A-4E57-947E-36A9F1F19BB8}|Ejercicio5_Biblioteca\\Ejercicio5_Biblioteca.csproj|d:\\martin\\instiutto idra\\2do\\programacion\\guia 1\\ejercicio5_biblioteca\\ejercicio5_biblioteca\\views\\prestamoview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C46AD4BF-F35A-4E57-947E-36A9F1F19BB8}|Ejercicio5_Biblioteca\\Ejercicio5_Biblioteca.csproj|solutionrelative:ejercicio5_biblioteca\\views\\prestamoview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{C46AD4BF-F35A-4E57-947E-36A9F1F19BB8}|Ejercicio5_Biblioteca\\Ejercicio5_Biblioteca.csproj|d:\\martin\\instiutto idra\\2do\\programacion\\guia 1\\ejercicio5_biblioteca\\ejercicio5_biblioteca\\views\\usuarioview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -30,7 +30,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Bookmark",
@@ -42,13 +42,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "Inicio.cs",
               "DocumentMoniker": "D:\\Martin\\INSTIUTTO IDRA\\2do\\Programacion\\Guia 1\\Ejercicio5_Biblioteca\\Ejercicio5_Biblioteca\\Inicio.cs",
               "RelativeDocumentMoniker": "Ejercicio5_Biblioteca\\Inicio.cs",
               "ToolTip": "D:\\Martin\\INSTIUTTO IDRA\\2do\\Programacion\\Guia 1\\Ejercicio5_Biblioteca\\Ejercicio5_Biblioteca\\Inicio.cs",
               "RelativeToolTip": "Ejercicio5_Biblioteca\\Inicio.cs",
-              "ViewState": "AgIAABYAAAAAAAAAAAAgwCUAAAAjAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACUAAAAjAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-06-27T16:26:36.727Z",
               "EditorCaption": ""
@@ -67,7 +67,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "PrestamoView.cs",
               "DocumentMoniker": "D:\\Martin\\INSTIUTTO IDRA\\2do\\Programacion\\Guia 1\\Ejercicio5_Biblioteca\\Ejercicio5_Biblioteca\\Views\\PrestamoView.cs",
               "RelativeDocumentMoniker": "Ejercicio5_Biblioteca\\Views\\PrestamoView.cs",
@@ -75,8 +75,7 @@
               "RelativeToolTip": "Ejercicio5_Biblioteca\\Views\\PrestamoView.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAACcAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-27T16:24:44.656Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-27T16:24:44.656Z"
             },
             {
               "$type": "Document",
