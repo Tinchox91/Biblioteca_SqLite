@@ -41,7 +41,7 @@
 - **Views:** Interfaz de usuario en consola.
 - **Contexto:** Configuración y acceso a la base de datos.
 - **Models:** Definición de las entidades (Libro, Usuario, Prestamo).
-
+- **BasicPack:** Clases Staticas donde se hacen las valdiaciones.
 ## Requisitos
 
 - .NET 8 SDK
