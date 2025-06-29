@@ -4,7 +4,7 @@ Una aplicación de consola desarrollada en **C# (.NET 8)** para la gestión de u
 
 ---
 
-## 🚀 Funcionalidades
+##  Funcionalidades
 
 ### 📘 Gestión de Libros
 - Agregar, eliminar, actualizar y buscar libros por autor o ISBN.
