@@ -1,5 +1,6 @@
 ﻿using BasicPack;
 using Modelos;
+using System.Reflection.Metadata.Ecma335;
 
 namespace Views
 {
@@ -87,6 +88,7 @@ namespace Views
                     {
                         case "1":
                             Colors.Magenta("Selecciona un usuario por ID: ", true);
+                            UsuarioView.MostrarNombresUsuarios(usuarios);
                             int idUsuario = Valid.IsNumber();
                             Usuario usuario = usuarios.FirstOrDefault(u => u.Id == idUsuario);
                             if (usuario != null)
@@ -112,13 +114,25 @@ namespace Views
             }
             //se selecciona el libro del préstamo
             Colors.Magenta("Selecciona el libro a prestar : ",true);
+            LibroView.MostrarNombresLibros(libros);
             if (libros == null || libros.Count == 0)
             {
                 Colors.Red("No hay libros disponibles para prestar.", true);
                 return null; // No se puede crear el préstamo si no hay libros
             }
-            libros = LibroView.DevolverLibrosDisponibles(libros);
-            pres.Libro=LibroView.DevolverLibroIsbn(libros);
+            do
+            {
+                libros = LibroView.DevolverLibrosDisponibles(libros);
+                pres.Libro = LibroView.DevolverLibroIsbn(libros);
+                if (pres.Libro == null)
+                {
+                    Colors.Red("No se pudo seleccionar un libro válido para el préstamo.", true);
+
+                    // No se puede crear el préstamo si no se selecciona un libro válido
+
+                }
+            } while (pres.Libro==null);
+          
             pres.Libro.Disponibilidad = "No Disponible"; // Cambia la disponibilidad del libro a no disponible
 
             return pres;

@@ -3,9 +3,9 @@ using Modelos;
 
 namespace Views
 {
-   public static class UsuarioView
+    public static class UsuarioView
     {
-       private static string x = new string('-', 30);
+        private static string x = new string('-', 30);
         public static string MenuUsuario()
         {
             Colors.DarkGray(x, true);
@@ -31,19 +31,19 @@ namespace Views
         }
         public static void MostrarUsuario(Usuario usuario)
         {
-            string barra = new string('-', 100);            
+            string barra = new string('-', 100);
             Colors.Magenta($"Id: {usuario.Id} -- Nombre: {usuario.Name} -- Mail: {usuario.Mail}", true);
             Colors.DarkGray(barra, true);
         }
         public static void MostrarUsuarios(List<Usuario> usuarios)
-          {
+        {
             string barra = new string('-', 100);
             Colors.Cyan("Lista de Usuarios:", true);
             Colors.DarkGray(barra, true);
             foreach (var usuario in usuarios)
-                {
-                 MostrarUsuario(usuario);
-                }
+            {
+                MostrarUsuario(usuario);
+            }
         }
         public static Usuario CrearUsuario()
         {
@@ -97,7 +97,7 @@ namespace Views
                         break;
                     case "2":
                         Colors.Cyan("Ingrese el nuevo Nombre: ");
-                       usuario.Name = Valid.IsString();
+                        usuario.Name = Valid.IsString();
                         break;
                     default:
                         Colors.Red("Opción no válida, manteniendo el Titulo original.", true);
@@ -118,7 +118,7 @@ namespace Views
                         break;
                     case "2":
                         Colors.Cyan("Ingrese el nuevo Mail: ");
-                       usuario.Mail = Valid.IsMail();
+                        usuario.Mail = Valid.IsMail();
                         break;
                     default:
                         Colors.Red("Opción no válida, Ingrese de nuevo", true);
@@ -150,12 +150,25 @@ namespace Views
         }
         public static string opcion(string titulo)
         {
-            Colors.Cyan($"¿Desea {titulo} ?: ",true);
+            Colors.Cyan($"¿Desea {titulo} ?: ", true);
             Colors.Magenta($"1. Para dejar el registro original ", true);
             Colors.White("2. Para cambiar el registro ", true);
             string dv = Valid.IsNumberString();
             return dv;
 
+        }
+        public static void MostrarNombresUsuarios(List<Usuario> usuarios)
+        {
+
+            foreach (var usuario in usuarios)
+            {
+              
+                Colors.Blue($"Id: ");
+                Colors.White($"{usuario.Id}  ",true);               
+                Colors.Blue($"Nombre: ");
+                Colors.White(usuario.Name,true);
+                Colors.DarkGray(x,true);
+            }
         }
     }
 }

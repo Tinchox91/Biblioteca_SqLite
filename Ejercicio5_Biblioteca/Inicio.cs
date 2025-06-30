@@ -19,10 +19,6 @@ class Inicio
         //Titulo de la consola
         Console.Title = "Biblioteca DB";
         // ******************************************************
-
-
-       
-
       string opcion="4";
         do
         {
@@ -90,14 +86,19 @@ class Inicio
                                 Colors.DarkGray("Apriete cualquier tecla para continuar...", true);
                                 Console.ReadKey();
                                 break;
-                                case "7":
+                            case "7":
+                                li.GetLibrosDisponiblesAsync().GetAwaiter().GetResult();
+                                Colors.DarkGray("Apriete cualquier tecla para continuar...", true);
+                                Console.ReadKey();
+                                break;
+                            case "8":
                                     Colors.White("Saliendo del menú de Libros...");
                                 break;
                             default:
                                 Colors.Red("Opción no válida. Intente nuevamente.");
                                 break;
                         }
-                    } while (opcionLibro != "7");
+                    } while (opcionLibro != "8");
                     break;
                 //Usuarios
                 case "2":

@@ -3,12 +3,8 @@
   "WorkspaceRootPath": "D:\\Martin\\INSTIUTTO IDRA\\2do\\Programacion\\Guia 1\\Ejercicio5_Biblioteca\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{C46AD4BF-F35A-4E57-947E-36A9F1F19BB8}|Ejercicio5_Biblioteca\\Ejercicio5_Biblioteca.csproj|d:\\martin\\instiutto idra\\2do\\programacion\\guia 1\\ejercicio5_biblioteca\\ejercicio5_biblioteca\\views\\prestamoview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C46AD4BF-F35A-4E57-947E-36A9F1F19BB8}|Ejercicio5_Biblioteca\\Ejercicio5_Biblioteca.csproj|solutionrelative:ejercicio5_biblioteca\\views\\prestamoview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C46AD4BF-F35A-4E57-947E-36A9F1F19BB8}|Ejercicio5_Biblioteca\\Ejercicio5_Biblioteca.csproj|d:\\martin\\instiutto idra\\2do\\programacion\\guia 1\\ejercicio5_biblioteca\\ejercicio5_biblioteca\\controllers\\librocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C46AD4BF-F35A-4E57-947E-36A9F1F19BB8}|Ejercicio5_Biblioteca\\Ejercicio5_Biblioteca.csproj|solutionrelative:ejercicio5_biblioteca\\controllers\\librocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{C46AD4BF-F35A-4E57-947E-36A9F1F19BB8}|Ejercicio5_Biblioteca\\Ejercicio5_Biblioteca.csproj|d:\\martin\\instiutto idra\\2do\\programacion\\guia 1\\ejercicio5_biblioteca\\ejercicio5_biblioteca\\views\\libroview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C46AD4BF-F35A-4E57-947E-36A9F1F19BB8}|Ejercicio5_Biblioteca\\Ejercicio5_Biblioteca.csproj|solutionrelative:ejercicio5_biblioteca\\views\\libroview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{C46AD4BF-F35A-4E57-947E-36A9F1F19BB8}|Ejercicio5_Biblioteca\\Ejercicio5_Biblioteca.csproj|d:\\martin\\instiutto idra\\2do\\programacion\\guia 1\\ejercicio5_biblioteca\\ejercicio5_biblioteca\\inicio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -19,8 +15,12 @@
       "RelativeMoniker": "D:0:0:{C46AD4BF-F35A-4E57-947E-36A9F1F19BB8}|Ejercicio5_Biblioteca\\Ejercicio5_Biblioteca.csproj|solutionrelative:ejercicio5_biblioteca\\views\\usuarioview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C46AD4BF-F35A-4E57-947E-36A9F1F19BB8}|Ejercicio5_Biblioteca\\Ejercicio5_Biblioteca.csproj|d:\\martin\\instiutto idra\\2do\\programacion\\guia 1\\ejercicio5_biblioteca\\ejercicio5_biblioteca\\views\\libroview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C46AD4BF-F35A-4E57-947E-36A9F1F19BB8}|Ejercicio5_Biblioteca\\Ejercicio5_Biblioteca.csproj|solutionrelative:ejercicio5_biblioteca\\views\\libroview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{C46AD4BF-F35A-4E57-947E-36A9F1F19BB8}|Ejercicio5_Biblioteca\\Ejercicio5_Biblioteca.csproj|d:\\martin\\instiutto idra\\2do\\programacion\\guia 1\\ejercicio5_biblioteca\\ejercicio5_biblioteca\\views\\prestamoview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C46AD4BF-F35A-4E57-947E-36A9F1F19BB8}|Ejercicio5_Biblioteca\\Ejercicio5_Biblioteca.csproj|solutionrelative:ejercicio5_biblioteca\\views\\prestamoview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C46AD4BF-F35A-4E57-947E-36A9F1F19BB8}|Ejercicio5_Biblioteca\\Ejercicio5_Biblioteca.csproj|d:\\martin\\instiutto idra\\2do\\programacion\\guia 1\\ejercicio5_biblioteca\\ejercicio5_biblioteca\\controllers\\librocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C46AD4BF-F35A-4E57-947E-36A9F1F19BB8}|Ejercicio5_Biblioteca\\Ejercicio5_Biblioteca.csproj|solutionrelative:ejercicio5_biblioteca\\controllers\\librocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -30,7 +30,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 6,
           "Children": [
             {
               "$type": "Bookmark",
@@ -38,21 +38,43 @@
             },
             {
               "$type": "Bookmark",
-              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
-            },
-            {
-              "$type": "Bookmark",
               "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 4,
+              "Title": "LibroController.cs",
+              "DocumentMoniker": "D:\\Martin\\INSTIUTTO IDRA\\2do\\Programacion\\Guia 1\\Ejercicio5_Biblioteca\\Ejercicio5_Biblioteca\\Controllers\\LibroController.cs",
+              "RelativeDocumentMoniker": "Ejercicio5_Biblioteca\\Controllers\\LibroController.cs",
+              "ToolTip": "D:\\Martin\\INSTIUTTO IDRA\\2do\\Programacion\\Guia 1\\Ejercicio5_Biblioteca\\Ejercicio5_Biblioteca\\Controllers\\LibroController.cs",
+              "RelativeToolTip": "Ejercicio5_Biblioteca\\Controllers\\LibroController.cs",
+              "ViewState": "AgIAADQAAAAAAAAAAAAcwDUAAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-30T02:44:50.948Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Inicio.cs",
+              "DocumentMoniker": "D:\\Martin\\INSTIUTTO IDRA\\2do\\Programacion\\Guia 1\\Ejercicio5_Biblioteca\\Ejercicio5_Biblioteca\\Inicio.cs",
+              "RelativeDocumentMoniker": "Ejercicio5_Biblioteca\\Inicio.cs",
+              "ToolTip": "D:\\Martin\\INSTIUTTO IDRA\\2do\\Programacion\\Guia 1\\Ejercicio5_Biblioteca\\Ejercicio5_Biblioteca\\Inicio.cs",
+              "RelativeToolTip": "Ejercicio5_Biblioteca\\Inicio.cs",
+              "ViewState": "AgIAAC4AAAAAAAAAAAAgwDcAAAA5AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-30T02:44:18.199Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
               "Title": "PrestamoView.cs",
               "DocumentMoniker": "D:\\Martin\\INSTIUTTO IDRA\\2do\\Programacion\\Guia 1\\Ejercicio5_Biblioteca\\Ejercicio5_Biblioteca\\Views\\PrestamoView.cs",
               "RelativeDocumentMoniker": "Ejercicio5_Biblioteca\\Views\\PrestamoView.cs",
               "ToolTip": "D:\\Martin\\INSTIUTTO IDRA\\2do\\Programacion\\Guia 1\\Ejercicio5_Biblioteca\\Ejercicio5_Biblioteca\\Views\\PrestamoView.cs",
               "RelativeToolTip": "Ejercicio5_Biblioteca\\Views\\PrestamoView.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACQAAABKAAAAAAAAAA==",
+              "ViewState": "AgIAAHIAAAAAAAAAAAAswHwAAAA8AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-06-29T20:18:23.886Z",
               "EditorCaption": ""
@@ -60,52 +82,28 @@
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "Inicio.cs",
-              "DocumentMoniker": "D:\\Martin\\INSTIUTTO IDRA\\2do\\Programacion\\Guia 1\\Ejercicio5_Biblioteca\\Ejercicio5_Biblioteca\\Inicio.cs",
-              "RelativeDocumentMoniker": "Ejercicio5_Biblioteca\\Inicio.cs",
-              "ToolTip": "D:\\Martin\\INSTIUTTO IDRA\\2do\\Programacion\\Guia 1\\Ejercicio5_Biblioteca\\Ejercicio5_Biblioteca\\Inicio.cs",
-              "RelativeToolTip": "Ejercicio5_Biblioteca\\Inicio.cs",
-              "ViewState": "AgIAACQAAAAAAAAAAAAswDAAAAAVAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-29T20:17:18.36Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "LibroController.cs",
-              "DocumentMoniker": "D:\\Martin\\INSTIUTTO IDRA\\2do\\Programacion\\Guia 1\\Ejercicio5_Biblioteca\\Ejercicio5_Biblioteca\\Controllers\\LibroController.cs",
-              "RelativeDocumentMoniker": "Ejercicio5_Biblioteca\\Controllers\\LibroController.cs",
-              "ToolTip": "D:\\Martin\\INSTIUTTO IDRA\\2do\\Programacion\\Guia 1\\Ejercicio5_Biblioteca\\Ejercicio5_Biblioteca\\Controllers\\LibroController.cs",
-              "RelativeToolTip": "Ejercicio5_Biblioteca\\Controllers\\LibroController.cs",
-              "ViewState": "AgIAAEEAAAAAAAAAAAAswFAAAAAZAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-29T20:06:01.098Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
               "Title": "UsuarioView.cs",
               "DocumentMoniker": "D:\\Martin\\INSTIUTTO IDRA\\2do\\Programacion\\Guia 1\\Ejercicio5_Biblioteca\\Ejercicio5_Biblioteca\\Views\\UsuarioView.cs",
               "RelativeDocumentMoniker": "Ejercicio5_Biblioteca\\Views\\UsuarioView.cs",
               "ToolTip": "D:\\Martin\\INSTIUTTO IDRA\\2do\\Programacion\\Guia 1\\Ejercicio5_Biblioteca\\Ejercicio5_Biblioteca\\Views\\UsuarioView.cs",
               "RelativeToolTip": "Ejercicio5_Biblioteca\\Views\\UsuarioView.cs",
-              "ViewState": "AgIAAGcAAAAAAAAAAAAswJcAAAAJAAAAAAAAAA==",
+              "ViewState": "AgIAAC8AAAAAAAAAAAAIwKkAAAAoAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-29T19:59:01.693Z"
+              "WhenOpened": "2025-06-29T19:59:01.693Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 0,
               "Title": "LibroView.cs",
               "DocumentMoniker": "D:\\Martin\\INSTIUTTO IDRA\\2do\\Programacion\\Guia 1\\Ejercicio5_Biblioteca\\Ejercicio5_Biblioteca\\Views\\LibroView.cs",
               "RelativeDocumentMoniker": "Ejercicio5_Biblioteca\\Views\\LibroView.cs",
               "ToolTip": "D:\\Martin\\INSTIUTTO IDRA\\2do\\Programacion\\Guia 1\\Ejercicio5_Biblioteca\\Ejercicio5_Biblioteca\\Views\\LibroView.cs",
               "RelativeToolTip": "Ejercicio5_Biblioteca\\Views\\LibroView.cs",
-              "ViewState": "AgIAAKMAAAAAAAAAAAAmwN8AAAAzAAAAAAAAAA==",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAkwBcAAAAdAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-29T19:30:12.683Z"
+              "WhenOpened": "2025-06-29T19:30:12.683Z",
+              "EditorCaption": ""
             }
           ]
         },

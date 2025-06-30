@@ -22,6 +22,8 @@ namespace Views
             Colors.Magenta("6. ");
             Colors.White("Mostrar Todos los Libros", true);
             Colors.Magenta("7. ");
+            Colors.White("Mostrar Libros Diponibles", true);
+            Colors.Magenta("8. ");
             Colors.White("Salir", true);
             Colors.DarkGray(x, true);
 
@@ -207,14 +209,28 @@ namespace Views
          
             return librosDisponibles; // Retorna la lista de libros disponibles
         }
+        public static void MostrarLibrosDisponibles(List<Libro> libros)
+        {
+            var librosDisponibles = DevolverLibrosDisponibles(libros);
+            if (librosDisponibles == null || librosDisponibles.Count == 0)
+            {
+                Colors.Red("No hay libros disponibles.", true);
+                return;
+            }
+            Colors.Magenta("*** Lista de Libros Disponibles ***", true);
+            foreach (var lib in librosDisponibles)
+            {
+                MostrarLibro(lib);
+            }
+        }
         public static Libro DevolverLibroIsbn(List<Libro> libros)
         {
             Colors.Cyan("Ingrese el ISBN del libro a buscar: ");
             int isbn = Valid.IsNumber();
             Libro libro = libros.FirstOrDefault(l => l.Isbn == isbn);
-            if (libro == null)
+            if (libro == null || libro.Disponibilidad=="No Diponible" )
             {
-                Colors.Red("El libro no existe.", true);
+                Colors.Red("El libro no existe o no esta disponible", true);
                return null; // Indica que no se encontró el libro
             }
            return libro;
@@ -227,6 +243,19 @@ namespace Views
            string dv= Valid.IsNumberString();
             return dv;  
 
+        }
+        public static void MostrarNombresLibros(List<Libro> libros)
+        {
+            var librosdisp=DevolverLibrosDisponibles(libros);
+                  
+            foreach (var lib in librosdisp)
+            {
+                Colors.Blue($"ISBN: ");
+                Colors.White($"{lib.Isbn}  ", true);
+                Colors.Blue($"Titulo: ");
+                Colors.White(lib.Titulo, true);
+                Colors.DarkGray(x, true);
+            }
         }
     }
 }
