@@ -84,14 +84,22 @@ namespace Controllers
         }
         public async Task DeletePrestamo()
         {
-            int id = PrestamoView.EliminarPrestamo(await TraerTodos());
+            var prestamos = await TraerTodos();
+            int id = PrestamoView.EliminarPrestamo(prestamos);
 
-            var prestamo = _context.Prestamos.FirstOrDefault(p => p.Id == id);
+            var prestamo = await _context.Prestamos
+                .Include(p => p.Libro)
+                .FirstOrDefaultAsync(p => p.Id == id);
+
             if (prestamo != null)
             {
-               
-                    _context.Prestamos.Remove(prestamo);
-                    Colors.White("Eliminando Prestamo...");
+                if (prestamo.Libro != null)
+                {
+                    prestamo.Libro.Disponibilidad = "Disponible";
+                }
+
+                _context.Prestamos.Remove(prestamo);
+                Colors.White("Eliminando Prestamo...");
                 try
                 {
                     await _context.SaveChangesAsync();
@@ -102,9 +110,11 @@ namespace Controllers
                 {
                     Colors.White("\r");
                     Colors.Red($"Error al eliminar el Prestamo: {e.Message}");
-                    
                 }
-                
+            }
+            else
+            {
+                Colors.Red("No se encontró el préstamo a eliminar.");
             }
         }
         public async Task SearchPrestamos()

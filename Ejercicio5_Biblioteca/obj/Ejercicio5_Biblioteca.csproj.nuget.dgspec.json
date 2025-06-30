@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Martin\\INSTIUTTO IDRA\\2do\\Programacion\\Guia 1\\Ejercicio5_Biblioteca\\Ejercicio5_Biblioteca\\Ejercicio5_Biblioteca.csproj": {}
+    "C:\\Users\\tinch\\OneDrive\\Documentos\\IDRA\\2do Año\\Programacion 2\\Proyectos\\Guia 1\\EJ5\\Biblioteca_SqLite\\Ejercicio5_Biblioteca\\Ejercicio5_Biblioteca.csproj": {}
   },
   "projects": {
-    "D:\\Martin\\INSTIUTTO IDRA\\2do\\Programacion\\Guia 1\\Ejercicio5_Biblioteca\\Ejercicio5_Biblioteca\\Ejercicio5_Biblioteca.csproj": {
+    "C:\\Users\\tinch\\OneDrive\\Documentos\\IDRA\\2do Año\\Programacion 2\\Proyectos\\Guia 1\\EJ5\\Biblioteca_SqLite\\Ejercicio5_Biblioteca\\Ejercicio5_Biblioteca.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Martin\\INSTIUTTO IDRA\\2do\\Programacion\\Guia 1\\Ejercicio5_Biblioteca\\Ejercicio5_Biblioteca\\Ejercicio5_Biblioteca.csproj",
+        "projectUniqueName": "C:\\Users\\tinch\\OneDrive\\Documentos\\IDRA\\2do Año\\Programacion 2\\Proyectos\\Guia 1\\EJ5\\Biblioteca_SqLite\\Ejercicio5_Biblioteca\\Ejercicio5_Biblioteca.csproj",
         "projectName": "Ejercicio5_Biblioteca",
-        "projectPath": "D:\\Martin\\INSTIUTTO IDRA\\2do\\Programacion\\Guia 1\\Ejercicio5_Biblioteca\\Ejercicio5_Biblioteca\\Ejercicio5_Biblioteca.csproj",
-        "packagesPath": "C:\\Users\\Tincho y Sofi\\.nuget\\packages\\",
-        "outputPath": "D:\\Martin\\INSTIUTTO IDRA\\2do\\Programacion\\Guia 1\\Ejercicio5_Biblioteca\\Ejercicio5_Biblioteca\\obj\\",
+        "projectPath": "C:\\Users\\tinch\\OneDrive\\Documentos\\IDRA\\2do Año\\Programacion 2\\Proyectos\\Guia 1\\EJ5\\Biblioteca_SqLite\\Ejercicio5_Biblioteca\\Ejercicio5_Biblioteca.csproj",
+        "packagesPath": "C:\\Users\\tinch\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\tinch\\OneDrive\\Documentos\\IDRA\\2do Año\\Programacion 2\\Proyectos\\Guia 1\\EJ5\\Biblioteca_SqLite\\Ejercicio5_Biblioteca\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\Tincho y Sofi\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\tinch\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -26,6 +26,7 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -87,7 +88,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.301/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.300/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

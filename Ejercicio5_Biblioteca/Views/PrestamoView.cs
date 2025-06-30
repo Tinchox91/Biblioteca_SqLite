@@ -105,7 +105,8 @@ namespace Views
                             break;
                             case "2":
                                 pres.Usuario = UsuarioView.CrearUsuario();
-                                break;
+                            salir = true;
+                            break;
                         default: salir = false; break;
                            
                     }

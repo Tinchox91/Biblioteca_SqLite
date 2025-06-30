@@ -1,26 +1,30 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "D:\\Martin\\INSTIUTTO IDRA\\2do\\Programacion\\Guia 1\\Ejercicio5_Biblioteca\\",
+  "WorkspaceRootPath": "C:\\Users\\tinch\\OneDrive\\Documentos\\IDRA\\2do A\u00F1o\\Programacion 2\\Proyectos\\Guia 1\\EJ5\\Biblioteca_SqLite\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{C46AD4BF-F35A-4E57-947E-36A9F1F19BB8}|Ejercicio5_Biblioteca\\Ejercicio5_Biblioteca.csproj|d:\\martin\\instiutto idra\\2do\\programacion\\guia 1\\ejercicio5_biblioteca\\ejercicio5_biblioteca\\inicio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C46AD4BF-F35A-4E57-947E-36A9F1F19BB8}|Ejercicio5_Biblioteca\\Ejercicio5_Biblioteca.csproj|solutionrelative:ejercicio5_biblioteca\\inicio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{C46AD4BF-F35A-4E57-947E-36A9F1F19BB8}|Ejercicio5_Biblioteca\\Ejercicio5_Biblioteca.csproj|c:\\users\\tinch\\onedrive\\documentos\\idra\\2do a\u00F1o\\programacion 2\\proyectos\\guia 1\\ej5\\biblioteca_sqlite\\ejercicio5_biblioteca\\controllers\\prestamocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C46AD4BF-F35A-4E57-947E-36A9F1F19BB8}|Ejercicio5_Biblioteca\\Ejercicio5_Biblioteca.csproj|solutionrelative:ejercicio5_biblioteca\\controllers\\prestamocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C46AD4BF-F35A-4E57-947E-36A9F1F19BB8}|Ejercicio5_Biblioteca\\Ejercicio5_Biblioteca.csproj|d:\\martin\\instiutto idra\\2do\\programacion\\guia 1\\ejercicio5_biblioteca\\ejercicio5_biblioteca\\views\\libroview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C46AD4BF-F35A-4E57-947E-36A9F1F19BB8}|Ejercicio5_Biblioteca\\Ejercicio5_Biblioteca.csproj|solutionrelative:ejercicio5_biblioteca\\views\\libroview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C46AD4BF-F35A-4E57-947E-36A9F1F19BB8}|Ejercicio5_Biblioteca\\Ejercicio5_Biblioteca.csproj|d:\\martin\\instiutto idra\\2do\\programacion\\guia 1\\ejercicio5_biblioteca\\ejercicio5_biblioteca\\views\\usuarioview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C46AD4BF-F35A-4E57-947E-36A9F1F19BB8}|Ejercicio5_Biblioteca\\Ejercicio5_Biblioteca.csproj|solutionrelative:ejercicio5_biblioteca\\views\\usuarioview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C46AD4BF-F35A-4E57-947E-36A9F1F19BB8}|Ejercicio5_Biblioteca\\Ejercicio5_Biblioteca.csproj|d:\\martin\\instiutto idra\\2do\\programacion\\guia 1\\ejercicio5_biblioteca\\ejercicio5_biblioteca\\views\\prestamoview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{C46AD4BF-F35A-4E57-947E-36A9F1F19BB8}|Ejercicio5_Biblioteca\\Ejercicio5_Biblioteca.csproj|c:\\users\\tinch\\onedrive\\documentos\\idra\\2do a\u00F1o\\programacion 2\\proyectos\\guia 1\\ej5\\biblioteca_sqlite\\ejercicio5_biblioteca\\views\\prestamoview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{C46AD4BF-F35A-4E57-947E-36A9F1F19BB8}|Ejercicio5_Biblioteca\\Ejercicio5_Biblioteca.csproj|solutionrelative:ejercicio5_biblioteca\\views\\prestamoview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C46AD4BF-F35A-4E57-947E-36A9F1F19BB8}|Ejercicio5_Biblioteca\\Ejercicio5_Biblioteca.csproj|d:\\martin\\instiutto idra\\2do\\programacion\\guia 1\\ejercicio5_biblioteca\\ejercicio5_biblioteca\\controllers\\librocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{C46AD4BF-F35A-4E57-947E-36A9F1F19BB8}|Ejercicio5_Biblioteca\\Ejercicio5_Biblioteca.csproj|c:\\users\\tinch\\onedrive\\documentos\\idra\\2do a\u00F1o\\programacion 2\\proyectos\\guia 1\\ej5\\biblioteca_sqlite\\ejercicio5_biblioteca\\controllers\\librocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{C46AD4BF-F35A-4E57-947E-36A9F1F19BB8}|Ejercicio5_Biblioteca\\Ejercicio5_Biblioteca.csproj|solutionrelative:ejercicio5_biblioteca\\controllers\\librocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C46AD4BF-F35A-4E57-947E-36A9F1F19BB8}|Ejercicio5_Biblioteca\\Ejercicio5_Biblioteca.csproj|c:\\users\\tinch\\onedrive\\documentos\\idra\\2do a\u00F1o\\programacion 2\\proyectos\\guia 1\\ej5\\biblioteca_sqlite\\ejercicio5_biblioteca\\inicio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C46AD4BF-F35A-4E57-947E-36A9F1F19BB8}|Ejercicio5_Biblioteca\\Ejercicio5_Biblioteca.csproj|solutionrelative:ejercicio5_biblioteca\\inicio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C46AD4BF-F35A-4E57-947E-36A9F1F19BB8}|Ejercicio5_Biblioteca\\Ejercicio5_Biblioteca.csproj|c:\\users\\tinch\\onedrive\\documentos\\idra\\2do a\u00F1o\\programacion 2\\proyectos\\guia 1\\ej5\\biblioteca_sqlite\\ejercicio5_biblioteca\\views\\libroview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C46AD4BF-F35A-4E57-947E-36A9F1F19BB8}|Ejercicio5_Biblioteca\\Ejercicio5_Biblioteca.csproj|solutionrelative:ejercicio5_biblioteca\\views\\libroview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C46AD4BF-F35A-4E57-947E-36A9F1F19BB8}|Ejercicio5_Biblioteca\\Ejercicio5_Biblioteca.csproj|c:\\users\\tinch\\onedrive\\documentos\\idra\\2do a\u00F1o\\programacion 2\\proyectos\\guia 1\\ej5\\biblioteca_sqlite\\ejercicio5_biblioteca\\views\\usuarioview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C46AD4BF-F35A-4E57-947E-36A9F1F19BB8}|Ejercicio5_Biblioteca\\Ejercicio5_Biblioteca.csproj|solutionrelative:ejercicio5_biblioteca\\views\\usuarioview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -30,8 +34,16 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 4,
           "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{75188d03-9892-4ae2-abf1-207126247ce5}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
             {
               "$type": "Bookmark",
               "Name": "ST:1:0:{e8034f19-ab72-4f06-83fd-f6832b41aa63}"
@@ -42,48 +54,60 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 0,
+              "Title": "PrestamoController.cs",
+              "DocumentMoniker": "C:\\Users\\tinch\\OneDrive\\Documentos\\IDRA\\2do A\u00F1o\\Programacion 2\\Proyectos\\Guia 1\\EJ5\\Biblioteca_SqLite\\Ejercicio5_Biblioteca\\Controllers\\PrestamoController.cs",
+              "RelativeDocumentMoniker": "Ejercicio5_Biblioteca\\Controllers\\PrestamoController.cs",
+              "ToolTip": "C:\\Users\\tinch\\OneDrive\\Documentos\\IDRA\\2do A\u00F1o\\Programacion 2\\Proyectos\\Guia 1\\EJ5\\Biblioteca_SqLite\\Ejercicio5_Biblioteca\\Controllers\\PrestamoController.cs",
+              "RelativeToolTip": "Ejercicio5_Biblioteca\\Controllers\\PrestamoController.cs",
+              "ViewState": "AgIAAFIAAAAAAAAAAAAuwHYAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-30T03:15:34.576Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "LibroController.cs",
-              "DocumentMoniker": "D:\\Martin\\INSTIUTTO IDRA\\2do\\Programacion\\Guia 1\\Ejercicio5_Biblioteca\\Ejercicio5_Biblioteca\\Controllers\\LibroController.cs",
+              "DocumentMoniker": "C:\\Users\\tinch\\OneDrive\\Documentos\\IDRA\\2do A\u00F1o\\Programacion 2\\Proyectos\\Guia 1\\EJ5\\Biblioteca_SqLite\\Ejercicio5_Biblioteca\\Controllers\\LibroController.cs",
               "RelativeDocumentMoniker": "Ejercicio5_Biblioteca\\Controllers\\LibroController.cs",
-              "ToolTip": "D:\\Martin\\INSTIUTTO IDRA\\2do\\Programacion\\Guia 1\\Ejercicio5_Biblioteca\\Ejercicio5_Biblioteca\\Controllers\\LibroController.cs",
+              "ToolTip": "C:\\Users\\tinch\\OneDrive\\Documentos\\IDRA\\2do A\u00F1o\\Programacion 2\\Proyectos\\Guia 1\\EJ5\\Biblioteca_SqLite\\Ejercicio5_Biblioteca\\Controllers\\LibroController.cs",
               "RelativeToolTip": "Ejercicio5_Biblioteca\\Controllers\\LibroController.cs",
-              "ViewState": "AgIAADQAAAAAAAAAAAAcwDUAAAAoAAAAAAAAAA==",
+              "ViewState": "AgIAABAAAAAAAAAAAADwvzUAAAAoAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-06-30T02:44:50.948Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 3,
               "Title": "Inicio.cs",
-              "DocumentMoniker": "D:\\Martin\\INSTIUTTO IDRA\\2do\\Programacion\\Guia 1\\Ejercicio5_Biblioteca\\Ejercicio5_Biblioteca\\Inicio.cs",
+              "DocumentMoniker": "C:\\Users\\tinch\\OneDrive\\Documentos\\IDRA\\2do A\u00F1o\\Programacion 2\\Proyectos\\Guia 1\\EJ5\\Biblioteca_SqLite\\Ejercicio5_Biblioteca\\Inicio.cs",
               "RelativeDocumentMoniker": "Ejercicio5_Biblioteca\\Inicio.cs",
-              "ToolTip": "D:\\Martin\\INSTIUTTO IDRA\\2do\\Programacion\\Guia 1\\Ejercicio5_Biblioteca\\Ejercicio5_Biblioteca\\Inicio.cs",
+              "ToolTip": "C:\\Users\\tinch\\OneDrive\\Documentos\\IDRA\\2do A\u00F1o\\Programacion 2\\Proyectos\\Guia 1\\EJ5\\Biblioteca_SqLite\\Ejercicio5_Biblioteca\\Inicio.cs",
               "RelativeToolTip": "Ejercicio5_Biblioteca\\Inicio.cs",
               "ViewState": "AgIAAE8AAAAAAAAAAAAgwDcAAAA5AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-30T02:44:18.199Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-30T02:44:18.199Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 1,
               "Title": "PrestamoView.cs",
-              "DocumentMoniker": "D:\\Martin\\INSTIUTTO IDRA\\2do\\Programacion\\Guia 1\\Ejercicio5_Biblioteca\\Ejercicio5_Biblioteca\\Views\\PrestamoView.cs",
+              "DocumentMoniker": "C:\\Users\\tinch\\OneDrive\\Documentos\\IDRA\\2do A\u00F1o\\Programacion 2\\Proyectos\\Guia 1\\EJ5\\Biblioteca_SqLite\\Ejercicio5_Biblioteca\\Views\\PrestamoView.cs",
               "RelativeDocumentMoniker": "Ejercicio5_Biblioteca\\Views\\PrestamoView.cs",
-              "ToolTip": "D:\\Martin\\INSTIUTTO IDRA\\2do\\Programacion\\Guia 1\\Ejercicio5_Biblioteca\\Ejercicio5_Biblioteca\\Views\\PrestamoView.cs",
+              "ToolTip": "C:\\Users\\tinch\\OneDrive\\Documentos\\IDRA\\2do A\u00F1o\\Programacion 2\\Proyectos\\Guia 1\\EJ5\\Biblioteca_SqLite\\Ejercicio5_Biblioteca\\Views\\PrestamoView.cs",
               "RelativeToolTip": "Ejercicio5_Biblioteca\\Views\\PrestamoView.cs",
-              "ViewState": "AgIAAHIAAAAAAAAAAAAswHwAAAA8AAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEYAAAAfAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-06-29T20:18:23.886Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 5,
               "Title": "UsuarioView.cs",
-              "DocumentMoniker": "D:\\Martin\\INSTIUTTO IDRA\\2do\\Programacion\\Guia 1\\Ejercicio5_Biblioteca\\Ejercicio5_Biblioteca\\Views\\UsuarioView.cs",
+              "DocumentMoniker": "C:\\Users\\tinch\\OneDrive\\Documentos\\IDRA\\2do A\u00F1o\\Programacion 2\\Proyectos\\Guia 1\\EJ5\\Biblioteca_SqLite\\Ejercicio5_Biblioteca\\Views\\UsuarioView.cs",
               "RelativeDocumentMoniker": "Ejercicio5_Biblioteca\\Views\\UsuarioView.cs",
-              "ToolTip": "D:\\Martin\\INSTIUTTO IDRA\\2do\\Programacion\\Guia 1\\Ejercicio5_Biblioteca\\Ejercicio5_Biblioteca\\Views\\UsuarioView.cs",
+              "ToolTip": "C:\\Users\\tinch\\OneDrive\\Documentos\\IDRA\\2do A\u00F1o\\Programacion 2\\Proyectos\\Guia 1\\EJ5\\Biblioteca_SqLite\\Ejercicio5_Biblioteca\\Views\\UsuarioView.cs",
               "RelativeToolTip": "Ejercicio5_Biblioteca\\Views\\UsuarioView.cs",
               "ViewState": "AgIAAC8AAAAAAAAAAAAIwKkAAAAoAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -91,16 +115,15 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 4,
               "Title": "LibroView.cs",
-              "DocumentMoniker": "D:\\Martin\\INSTIUTTO IDRA\\2do\\Programacion\\Guia 1\\Ejercicio5_Biblioteca\\Ejercicio5_Biblioteca\\Views\\LibroView.cs",
+              "DocumentMoniker": "C:\\Users\\tinch\\OneDrive\\Documentos\\IDRA\\2do A\u00F1o\\Programacion 2\\Proyectos\\Guia 1\\EJ5\\Biblioteca_SqLite\\Ejercicio5_Biblioteca\\Views\\LibroView.cs",
               "RelativeDocumentMoniker": "Ejercicio5_Biblioteca\\Views\\LibroView.cs",
-              "ToolTip": "D:\\Martin\\INSTIUTTO IDRA\\2do\\Programacion\\Guia 1\\Ejercicio5_Biblioteca\\Ejercicio5_Biblioteca\\Views\\LibroView.cs",
+              "ToolTip": "C:\\Users\\tinch\\OneDrive\\Documentos\\IDRA\\2do A\u00F1o\\Programacion 2\\Proyectos\\Guia 1\\EJ5\\Biblioteca_SqLite\\Ejercicio5_Biblioteca\\Views\\LibroView.cs",
               "RelativeToolTip": "Ejercicio5_Biblioteca\\Views\\LibroView.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAoAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-29T19:30:12.683Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-29T19:30:12.683Z"
             }
           ]
         },
@@ -110,8 +133,14 @@
           "Children": [
             {
               "$type": "Bookmark",
-              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
-            },
+              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+            }
+          ]
+        },
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": -1,
+          "Children": [
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
